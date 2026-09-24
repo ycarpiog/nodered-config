@@ -1,0 +1,22 @@
+# .dockerignore
+
+# Git
+.git/
+.gitignore
+
+# Node modules (se reinstalan en el build)
+data/
+
+# Logs
+*.log
+logs/
+
+# Archivos de entorno
+.env
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de desarrollo
+.dockerignore

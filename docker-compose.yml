@@ -1,0 +1,27 @@
+services:
+  nodered:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nodered-opt:local
+    container_name: nodered
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "1880:1880"
+    volumes:
+      - ./config:/data:rw
+      - ./data/node_modules:/data/node_modules:rw
+      - ./data/public:/data/public:rw
+      - ./data/package.json:/data/package.json:rw
+      - ./data/package-lock.json:/data/package-lock.json:rw
+      - ./data/temp:/data/temp:rw
+      - ./data/databases:/data/databases:rw
+      - ./data/.npm:/data/.npm:rw
+      - ./logs:/logs:rw
+      - /mnt/SERVER06:/mnt/SERVER06:rw
+      - /mnt/PLATERANFS1:/mnt/PLATERANFS1:rw
+      - /mnt/TELEFONICA:/mnt/TELEFONICA:rw
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

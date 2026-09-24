@@ -1,0 +1,29 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "@flowfuse/node-red-dashboard": "~1.30.2",
+        "@juraj336/node-red-buffer-xlsx": "~1.0.1",
+        "exceljs": "^4.4.0",
+        "node-red-contrib-dir2files": "~0.3.0",
+        "node-red-contrib-excelsheets": "~1.1.1",
+        "node-red-contrib-filesystem": "~1.0.0",
+        "node-red-contrib-flogger": "~1.2.2",
+        "node-red-contrib-ftp-client": "~0.1.11",
+        "node-red-contrib-mssql-plus": "~0.13.1",
+        "node-red-contrib-pdf": "~0.1.0",
+        "node-red-contrib-pdf-reader": "~1.0.0",
+        "node-red-contrib-readdir": "~1.0.1",
+        "node-red-contrib-sftpco": "~1.0.17",
+        "node-red-contrib-stackhero-mysql": "~1.0.5",
+        "node-red-contrib-telegrambot": "~17.4.16",
+        "node-red-contrib-watchdirectory": "~1.0.14",
+        "node-red-node-email": "~5.2.4",
+        "node-red-node-sqlite": "~2.0.1",
+        "queue": "^7.0.0",
+        "ssh2-sftp-client": "^12.0.1",
+        "xlsx": "^0.18.5"
+    }
+}
