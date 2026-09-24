@@ -37,3 +37,6 @@ config/84200/
 *.key
 *.crt
 **/__pycache__/
+
+# Complete active deployment, including private configuration and data
+/runtime/

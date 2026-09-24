@@ -1,3 +1,11 @@
+# Instalación activa en este servidor
+
+Node-RED se ejecuta desde `/opt/nodered-config` con `docker compose`. Los archivos activos están en `runtime/`: `runtime/config`, `runtime/data`, `runtime/logs` y `runtime/.env`. `runtime/` no se publica en GitHub. Las carpetas `config/` y `data/` de la raíz contienen copias depuradas para control de versiones; editarlas no modifica el servicio en ejecución.
+
+La guía histórica siguiente usa las rutas anteriores a esta migración. Para administrar esta instalación, ejecuta `docker compose` desde `/opt/nodered-config` y edita los archivos de `runtime/`.
+
+---
+
 # Node-RED Docker
 
 Proyecto Node-RED desplegado con Docker Compose, configuracion versionada y secretos manejados por variables de entorno.

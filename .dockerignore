@@ -20,3 +20,6 @@ Thumbs.db
 
 # Archivos de desarrollo
 .dockerignore
+
+# Active deployment and private data
+runtime/

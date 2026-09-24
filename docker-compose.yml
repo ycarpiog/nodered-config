@@ -1,3 +1,5 @@
+name: nodered-config
+
 services:
   nodered:
     build:
@@ -7,19 +9,19 @@ services:
     container_name: nodered
     restart: unless-stopped
     env_file:
-      - .env
+      - ./runtime/.env
     ports:
       - "1880:1880"
     volumes:
-      - ./config:/data:rw
-      - ./data/node_modules:/data/node_modules:rw
-      - ./data/public:/data/public:rw
-      - ./data/package.json:/data/package.json:rw
-      - ./data/package-lock.json:/data/package-lock.json:rw
-      - ./data/temp:/data/temp:rw
-      - ./data/databases:/data/databases:rw
-      - ./data/.npm:/data/.npm:rw
-      - ./logs:/logs:rw
+      - ./runtime/config:/data:rw
+      - ./runtime/data/node_modules:/data/node_modules:rw
+      - ./runtime/data/public:/data/public:rw
+      - ./runtime/data/package.json:/data/package.json:rw
+      - ./runtime/data/package-lock.json:/data/package-lock.json:rw
+      - ./runtime/data/temp:/data/temp:rw
+      - ./runtime/data/databases:/data/databases:rw
+      - ./runtime/data/.npm:/data/.npm:rw
+      - ./runtime/logs:/logs:rw
       - /mnt/SERVER06:/mnt/SERVER06:rw
       - /mnt/PLATERANFS1:/mnt/PLATERANFS1:rw
       - /mnt/TELEFONICA:/mnt/TELEFONICA:rw
